@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lets Chat</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="accept_request">accept Request</string>
+    <string name="send_request">Send Request</string>
+    <string name="remove_contact">Remove Contact</string>
+    <string name="message_string">Open Contacts</string>
+
+    <string name="notification_listener_service">"Notification Listener Service"</string>
+    <string name="notification_listener_service_explanation">"For the the app. to work you need to enable the Notification Listener Service. Enable it now?"</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="google_maps_api_key">AIzaSyDcJiuk91skgl_uxW44YzV6k4epA_K79tM</string>
+</resources>

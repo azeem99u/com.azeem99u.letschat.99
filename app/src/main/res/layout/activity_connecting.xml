@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_back"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/connectivityTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calltypeTxtC" />
+
+    <TextView
+        android:id="@+id/calltypeTxtC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callingPersonImage" />
+
+    <TextView
+        android:id="@+id/callingPersonNameC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/callingPersonImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="52dp"
+        android:background="#ECECEC"
+        android:theme="@style/ShapeAppearanceOverlay.LetsChat"
+        app:layout_constraintEnd_toEndOf="@+id/callingPersonNameC"
+        app:layout_constraintStart_toStartOf="@+id/callingPersonNameC"
+        app:layout_constraintTop_toBottomOf="@+id/callingPersonNameC"
+        app:srcCompat="@drawable/profileimage" />
+
+    <com.skyfishjy.library.RippleBackground
+
+        android:id="@+id/rippleBackground"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rejectBtn"
+        app:layout_constraintEnd_toEndOf="@+id/rejectBtn"
+        app:layout_constraintStart_toStartOf="@+id/rejectBtn"
+        app:layout_constraintTop_toTopOf="@+id/rejectBtn"
+        app:rb_color="#CF0000"
+        app:rb_duration="3500"
+        app:rb_radius="14dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+    </com.skyfishjy.library.RippleBackground>
+
+
+    <ImageView
+        android:id="@+id/rejectBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calltypeTxtC"
+        app:layout_constraintVertical_bias="0.758"
+        app:srcCompat="@drawable/btn_endcall_normal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

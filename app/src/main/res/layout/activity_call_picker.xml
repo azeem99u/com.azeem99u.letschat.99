@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_back"
+    android:fitsSystemWindows="true"
+    tools:context=".CallPickerActivity">
+
+
+    <TextView
+        android:id="@+id/calltypeTxtC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callingPersonImage"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <TextView
+        android:id="@+id/callingPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/callingPersonImage"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="#ECECEC"
+        android:theme="@style/ShapeAppearanceOverlay.LetsChat"
+        app:layout_constraintEnd_toEndOf="@+id/callingPersonName"
+        app:layout_constraintStart_toStartOf="@+id/callingPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/callingPersonName"
+        app:srcCompat="@drawable/profileimage" />
+
+
+    <ImageView
+        android:id="@+id/rejectBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/acceptBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/acceptBtn"
+        app:layout_constraintTop_toTopOf="@+id/acceptBtn"
+        app:srcCompat="@drawable/btn_endcall_normal"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <com.skyfishjy.library.RippleBackground
+
+        android:id="@+id/content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/acceptBtn"
+        app:layout_constraintEnd_toEndOf="@+id/acceptBtn"
+        app:layout_constraintStart_toStartOf="@+id/acceptBtn"
+        app:layout_constraintTop_toTopOf="@+id/acceptBtn"
+        app:rb_color="#FF6D00"
+        app:rb_duration="2700"
+        app:rb_radius="12dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+    </com.skyfishjy.library.RippleBackground>
+
+
+    <ImageView
+        android:id="@+id/acceptBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rejectBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calltypeTxtC"
+        app:layout_constraintVertical_bias="0.84000003"
+        tools:srcCompat="@drawable/btn_startcall_normal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Accept"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/acceptBtn"
+        app:layout_constraintStart_toStartOf="@+id/acceptBtn"
+        app:layout_constraintTop_toBottomOf="@+id/acceptBtn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Reject"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/rejectBtn"
+        app:layout_constraintStart_toStartOf="@+id/rejectBtn"
+        app:layout_constraintTop_toBottomOf="@+id/rejectBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

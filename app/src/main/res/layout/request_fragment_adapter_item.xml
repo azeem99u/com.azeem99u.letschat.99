@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="4dp">
+
+
+    <TextView
+        android:id="@+id/userNameToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userLastMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/userImageM"
+        app:layout_constraintTop_toTopOf="@+id/userImageM"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="Muhammad Azeem" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImageM"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ECECEC"
+        android:theme="@style/ShapeAppearanceOverlay.LetsChat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/profileimage" />
+
+
+    <TextView
+        android:id="@+id/userLastMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLength="30"
+
+        android:maxLines="1"
+        android:textAppearance="?textAppearanceTitleMedium"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/acceptRequestBtnR"
+        app:layout_constraintEnd_toEndOf="@+id/userNameToolbar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/userNameToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/userNameToolbar"
+        tools:text="I am Android developer" />
+
+    <Button
+        android:id="@+id/acceptRequestBtnR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:text="Accept"
+        style="@style/Button.LetsChat"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/userImageM"
+        app:layout_constraintEnd_toStartOf="@+id/cancelRequestBtnR"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/userImageM"
+        app:layout_constraintStart_toStartOf="@+id/userLastMessage"
+        app:layout_constraintTop_toBottomOf="@+id/userLastMessage" />
+
+    <Button
+        android:id="@+id/cancelRequestBtnR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/acceptRequestBtnR"
+        app:layout_constraintEnd_toEndOf="@+id/userLastMessage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/acceptRequestBtnR"
+        app:layout_constraintTop_toTopOf="@+id/acceptRequestBtnR" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

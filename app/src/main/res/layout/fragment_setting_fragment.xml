@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    tools:context=".SettingFragment">
+
+
+    <TextView
+        android:id="@+id/helpAndSupport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/ic_baseline_support_24"
+        android:drawablePadding="8dp"
+        android:padding="4dp"
+        android:paddingStart="8dp"
+        android:text="Help and support"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="normal"
+        android:background="?attr/selectableItemBackground"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view33" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="#885E5E5E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpAndSupport" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="4dp"
+        android:paddingStart="8dp"
+        android:text="version 1.1.1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#9A9A9A"
+        android:textStyle="normal"
+        android:background="?attr/selectableItemBackground"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view53"
+        app:layout_constraintTop_toBottomOf="@+id/view53" />
+
+    <TextView
+        android:id="@+id/logoutTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/ic_baseline_login_24"
+        android:drawablePadding="8dp"
+        android:padding="4dp"
+        android:paddingStart="8dp"
+        android:text="Log out"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="normal"
+        android:background="?attr/selectableItemBackground"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view53"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="#885E5E5E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutTxt" />
+
+    <TextView
+        android:id="@+id/inviteFriend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/ic_baseline_add_24newf"
+        android:drawablePadding="8dp"
+        android:padding="4dp"
+        android:paddingStart="8dp"
+        android:text="Invite friends"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="normal"
+        android:background="?attr/selectableItemBackground"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view33"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="#885E5E5E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inviteFriend" />
+
+    <TextView
+        android:id="@+id/editProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_outline_account_circle_24"
+        android:drawablePadding="8dp"
+        android:padding="4dp"
+        android:paddingStart="8dp"
+
+        android:text="Edit account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="#885E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfile" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_margin="12dp"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/profileimage"
+        android:theme="@style/ShapeAppearanceOverlay.LetsChat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Muhammad Azeem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/userStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userImage"
+        app:layout_constraintTop_toTopOf="@+id/userImage"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/userStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Active"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/userImage"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="#885E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

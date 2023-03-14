@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:theme="@style/App.ToolbarStyle"
+    app:titleTextColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rootViewCons"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:focusable="true">
+
+
+        <TextView
+            android:id="@+id/userNameToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:layout_marginStart="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/userLastMessage"
+            app:layout_constraintStart_toEndOf="@+id/backButtonCons"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Muhammad Azeem" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/backButtonCons"
+            android:layout_width="wrap_content"
+            android:background="?selectableItemBackground"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/backButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:theme="@style/ShapeAppearanceOverlay.LetsChat"
+                app:layout_constraintBottom_toBottomOf="@+id/userImageM"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userImageM" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userImageM"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ECECEC"
+                android:theme="@style/ShapeAppearanceOverlay.LetsChat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/backButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25"
+                app:srcCompat="@drawable/profileimage" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userOnlineStatus"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/ShapeAppearanceOverlay.LetsChat"
+                app:layout_constraintBottom_toBottomOf="@+id/userImageM"
+                app:layout_constraintEnd_toEndOf="@+id/userImageM"
+                app:layout_constraintStart_toEndOf="@+id/userImageM"
+                app:layout_constraintTop_toBottomOf="@+id/userImageM" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/userLastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="1"
+            android:textAppearance="?textAppearanceTitleMedium"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingStart="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/userNameToolbar"
+            app:layout_constraintStart_toStartOf="@+id/userNameToolbar"
+            app:layout_constraintTop_toBottomOf="@+id/userNameToolbar"
+            tools:ignore="RtlSymmetry" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.appbar.MaterialToolbar>
